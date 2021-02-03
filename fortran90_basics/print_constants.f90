@@ -26,6 +26,12 @@ program print_constants
     CHARACTER(LEN=*), PARAMETER :: &
         PROMPT = "What do you want?" ! Len = 17
 
+    ! initialisation des variables :
+    REAL :: Offset = 0.1, Length = 10.0, tolerance = 1.E-7
+    CHARACTER(LEN=2) :: State1 = "MI", State2 = "MD"
+    INTEGER, PARAMETER :: Quantity = 10, Amount = 435
+    INTEGER, PARAMETER :: Period = 3
+    INTEGER :: Pay = Quantity*Amount, Received = Period+5
 
     
 end program print_constants
