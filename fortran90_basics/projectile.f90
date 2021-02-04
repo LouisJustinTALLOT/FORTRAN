@@ -16,14 +16,14 @@ PROGRAM Projectile
     Angle= Angle* PI   / 180.0 ! convert to radian
     X = U * COS(Angle) * Time
     Y = U * SIN(Angle) * Time - g*Time*Time / 2.0
-    Vx = U * COS(Anle) g
+    Vx = U * COS(Angle) 
     Vy = U * SIN(Angle) - g * Time
     V = SQRT(Vx*Vx + Vy*Vy)
     Theta = ATAN(Vy/Vx) * 180.0 / PI ! convert to degree
     WRITE(*,*) 'Horizontal displacement : ', X
     WRITE(*,*) 'Vertical displacement : ', Y
-    48
+    
     WRITE(*,*) 'Resultant velocity : ', V
     WRITE(*,*) 'Direction (in degree) : ', Theta
-    
+
     END PROGRAM Projectile
