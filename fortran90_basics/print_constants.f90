@@ -33,5 +33,21 @@ program print_constants
     INTEGER, PARAMETER :: Period = 3
     INTEGER :: Pay = Quantity*Amount, Received = Period+5
 
+    ! les opérateurs :
+
+    .not. false
+    true .neq. false
+    !...
+
+    real :: x = 3.5
+    real :: y
+    y = floor(x)
+    y = int(x)
+    y = fraction(x)
+
+    y = sqrt(x)
+    y = atan(x)
+    
+
     
 end program print_constants
