@@ -1,5 +1,6 @@
 program date_time
     implicit none
+    ! gfortran date_time.f90 -o date_time
 
     character(len=4) :: year
     character(len=2) :: month, day
